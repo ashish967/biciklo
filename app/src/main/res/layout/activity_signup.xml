@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bycycle.android.activity.SignupActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="@color/app_color"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Signup"
+        style="@style/ToolbarTheme"
+        android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:textColorHint="@color/text_grey">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusDown="@+id/et_city"
+            android:textColor="@color/black"
+            app:theme="@style/editTextTheme"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:textColorHint="@color/text_grey">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Phone"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusDown="@+id/et_city"
+            android:textColor="@color/black"
+            app:theme="@style/editTextTheme"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@color/app_color"
+        android:text="Signup"
+        android:id="@+id/btn_signup"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</layout>

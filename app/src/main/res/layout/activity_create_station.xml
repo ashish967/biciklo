@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_station"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bycycle.android.activity.CreateStationActivity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context="com.bycycle.android.activity.HomeActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Select Location"
+        style="@style/ToolbarTheme"
+        android:id="@+id/toolbar"
+        ></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:background="@drawable/edit_box_background"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/default_margin"
+        android:gravity="center"
+        android:id="@+id/current_location"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="@dimen/default_margin"
+            android:hint="Station Name"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="textCapSentences"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/et_station_name"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:src="@drawable/pin"
+        android:layout_centerInParent="true"
+        android:layout_height="50dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@color/app_color"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:id="@+id/btn_submit"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</layout>

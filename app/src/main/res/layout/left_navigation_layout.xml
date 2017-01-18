@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/default_margin"
+            android:id="@+id/self_view"
+            android:layout_height="120dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:src="@drawable/bycycle"
+                android:tint="@color/white"
+                android:layout_marginRight="@dimen/default_margin"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_name"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/white"
+                android:text="@string/app_name"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/payment"
+                android:layout_width="@dimen/navigation_icon_size"
+                android:layout_height="@dimen/navigation_icon_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/payment"
+                android:id="@+id/tv_payment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/trips"
+                android:layout_width="@dimen/navigation_icon_size"
+                android:layout_height="@dimen/navigation_icon_size" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/rides"
+                android:id="@+id/tv_rides"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/admin"
+                android:layout_width="@dimen/navigation_icon_size"
+                android:layout_height="@dimen/navigation_icon_size" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/admin_panel"
+                android:id="@+id/tv_admin_panel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/kyc_proof"
+                android:layout_width="@dimen/navigation_icon_size"
+                android:layout_height="@dimen/navigation_icon_size" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/verify"
+                android:id="@+id/tv_verify"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/aboutus"
+                android:layout_width="@dimen/navigation_icon_size"
+                android:layout_height="@dimen/navigation_icon_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/about"
+                android:id="@+id/tv_about"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

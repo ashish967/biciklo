@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="google_maps_key">your_key_goes_here</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="payment">Payment</string>
+    <string name="rides">Rides</string>
+    <string name="about">About</string>
+    <string name="admin_panel">Admin Panel</string>
+    <string name="verify">Verify KYC</string>
+    <string name="about_us"><![CDATA[<h1><strong>What is Biciklo?</strong>
+</h1>
+<p>You can now get rental service of bicycle near to your location. Download app an enjoy easy and smooth experience of bicycle riding.
+</p>
+<h1><strong>Who Should use Biciklo?</strong>
+</h1>
+<p >Any one who is looking for some low-priced and healthy medium for travel, where he/she can request a bicycle through phone or just want to opt bicycle ride for shorter distance or care about the environment and are ready to use this service for their local commute.
+</p>]]>
+</string>
+    <string name="nearby_stations">Nearby Stations</string>
+    <string name="no_stations">No stations near your location</string>
+    <string name="attach_kyc_message">Tap to attach KYC document image</string>
+    <string name="attach_kyc_error_message">Please attach kyc document to proceed.</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:id="@+id/toolbar"
+                android:background="@color/app_color"
+                android:minHeight="?attr/actionBarSize"
+                app:title="Vehicle Information"
+                style="@style/ToolbarTheme"
+                android:layout_height="wrap_content"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
+                android:textColorHint="@color/text_grey">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="NUMBER"
+                    android:textAllCaps="true"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:nextFocusDown="@+id/et_city"
+                    android:textColor="@color/black"
+                    app:theme="@style/editTextTheme"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@color/app_color"
+            android:text="Submit"
+            android:layout_gravity="bottom"
+            android:id="@+id/btn_signup"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_height="wrap_content" />
+
+
+
+    </FrameLayout>
+
+</layout>

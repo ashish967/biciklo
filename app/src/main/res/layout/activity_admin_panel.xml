@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/activity_admin_panel"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context="com.bycycle.android.activity.AdminPanelActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:background="@color/app_color"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Admin Panel"
+            style="@style/ToolbarTheme"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:background="@color/app_color"
+            android:text="Create Station"
+            android:textColor="@color/black"
+            android:id="@+id/btn_create_station"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@color/app_color"
+            android:text="Create Vehicle"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:id="@+id/btn_create_vehical"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@color/app_color"
+            android:text="Get Vehicle List"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:id="@+id/btn_vehicle_list"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@color/app_color"
+            android:text="Get Station List"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:id="@+id/btn_station_list"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

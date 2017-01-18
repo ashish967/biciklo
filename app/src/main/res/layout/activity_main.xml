@@ -1,0 +1,135 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent">
+        <RelativeLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map"
+                tools:context="com.bycycle.android.activity.HomeActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:id="@+id/toolbar"
+                android:paddingLeft="@dimen/default_margin"
+                android:minHeight="?attr/actionBarSize">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/menu"
+                    android:id="@+id/iv_menu"
+                    android:tint="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="Stations Near Your Location"/>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/edit_box_background"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/default_margin"
+                android:gravity="center"
+                android:clickable="true"
+                android:padding="10dp"
+                android:id="@+id/current_location"
+                android:layout_below="@id/toolbar"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/search_black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:id="@+id/tv_current_location"
+                    android:textSize="@dimen/text_size_medium"
+                    tools:text="Sector 40, Gurgaon Haryana"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="#CCFFFFFF"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/default_margin"
+                    android:id="@+id/tv_journey_message"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Request A Ride"
+                    android:gravity="center"
+                    android:id="@+id/tv_request_ride"
+                    android:textAllCaps="true"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/black_action_background"
+                    android:textSize="@dimen/text_size_large"
+                    android:layout_margin="12dp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:id="@+id/left_navigation"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/include_left_menu"
+                layout="@layout/left_navigation_layout"
+                />
+
+
+        </FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+</layout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_status"
+        android:padding="@dimen/default_margin"
+        android:background="@color/off_white"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:text="@string/nearby_stations"
+        android:layout_height="wrap_content" />
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:id="@+id/stations_listview"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_empty_view"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/off_white"
+        android:text="@string/no_stations"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>
