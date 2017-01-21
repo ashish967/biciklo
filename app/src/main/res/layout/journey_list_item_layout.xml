@@ -83,15 +83,16 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_marginRight="@dimen/default_margin"
+                android:layout_marginEnd="@dimen/default_margin"
                 android:id="@+id/tv_start_station"
                 tools:text="Shakti Peeth Temple"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/default_margin" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:gravity="right"
+                android:gravity="end"
                 android:id="@+id/tv_end_station"
                 tools:text="Shakti Peeth Temple"
                 android:layout_height="wrap_content" />

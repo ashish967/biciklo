@@ -1,5 +1,8 @@
 package com.bycycle.android.datatypes;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.bycycle.android.utils.JsonUtils;
 
 import org.json.JSONArray;
@@ -12,7 +15,7 @@ import java.util.ArrayList;
  * Created by Ashish Kumar Khatri on 24/12/16.
  */
 
-public class Vehicle implements Serializable{
+public class Vehicle implements Parcelable {
 
     private String id,number;
 
@@ -86,4 +89,39 @@ public class Vehicle implements Serializable{
 
         return vehicles;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.id);
+        dest.writeString(this.number);
+        dest.writeSerializable(this.user);
+        dest.writeParcelable(this.station, flags);
+    }
+
+    public Vehicle() {
+    }
+
+    protected Vehicle(Parcel in) {
+        this.id = in.readString();
+        this.number = in.readString();
+        this.user = (UserInfo) in.readSerializable();
+        this.station = in.readParcelable(Station.class.getClassLoader());
+    }
+
+    public static final Parcelable.Creator<Vehicle> CREATOR = new Parcelable.Creator<Vehicle>() {
+        @Override
+        public Vehicle createFromParcel(Parcel source) {
+            return new Vehicle(source);
+        }
+
+        @Override
+        public Vehicle[] newArray(int size) {
+            return new Vehicle[size];
+        }
+    };
 }

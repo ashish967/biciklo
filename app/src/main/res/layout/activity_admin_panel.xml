@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:background="@color/app_color"
             android:minHeight="?attr/actionBarSize"
-            app:title="Admin Panel"
+            app:title="@string/admin_panel"
             style="@style/ToolbarTheme"
             android:layout_height="wrap_content"/>
 
@@ -28,7 +28,7 @@
         <Button
             android:layout_width="match_parent"
             android:background="@color/app_color"
-            android:text="Create Station"
+            android:text="@string/create_station"
             android:textColor="@color/black"
             android:id="@+id/btn_create_station"
             android:layout_marginBottom="@dimen/default_margin"
@@ -37,7 +37,7 @@
         <Button
             android:layout_width="match_parent"
             android:background="@color/app_color"
-            android:text="Create Vehicle"
+            android:text="@string/create_vehicle"
             android:textColor="@color/black"
             android:layout_marginBottom="@dimen/default_margin"
             android:id="@+id/btn_create_vehical"
@@ -47,7 +47,7 @@
         <Button
             android:layout_width="match_parent"
             android:background="@color/app_color"
-            android:text="Get Vehicle List"
+            android:text="@string/get_vehicle"
             android:textColor="@color/black"
             android:layout_marginBottom="@dimen/default_margin"
             android:id="@+id/btn_vehicle_list"
@@ -57,7 +57,7 @@
         <Button
             android:layout_width="match_parent"
             android:background="@color/app_color"
-            android:text="Get Station List"
+            android:text="@string/get_station_list"
             android:textColor="@color/black"
             android:layout_marginBottom="@dimen/default_margin"
             android:id="@+id/btn_station_list"

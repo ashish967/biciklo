@@ -86,10 +86,10 @@ public class StationsListAdapter extends RecyclerView.Adapter<StationsListAdapte
         if(mActivity instanceof StationsListActivity){
 
             if(((StationsListActivity) mActivity).selectionMode()){
-                holder.listItemLayoutBinding.tvAction.setText("Select station");
+                holder.listItemLayoutBinding.tvAction.setText(mActivity.getString(R.string.select_station));
             }
             else{
-                holder.listItemLayoutBinding.tvAction.setText("Show Vehicles");
+                holder.listItemLayoutBinding.tvAction.setText(mActivity.getString(R.string.show_vehicle));
             }
         }
 

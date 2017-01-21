@@ -30,8 +30,9 @@
                 android:background="@color/white"
                 android:elevation="4dp"
                 android:id="@+id/toolbar"
-                android:paddingLeft="@dimen/default_margin"
-                android:minHeight="?attr/actionBarSize">
+                android:paddingStart="@dimen/default_margin"
+                android:minHeight="?attr/actionBarSize"
+                android:paddingLeft="@dimen/default_margin">
 
 
                 <ImageView
@@ -39,6 +40,7 @@
                     android:src="@drawable/menu"
                     android:id="@+id/iv_menu"
                     android:tint="@color/black"
+                    android:contentDescription="@string/menu_description"
                     android:layout_centerVertical="true"
                     android:layout_height="wrap_content" />
 
@@ -50,7 +52,7 @@
                     android:textColor="@color/black"
                     android:fontFamily="sans-serif-condensed"
                     android:textSize="@dimen/text_size_large"
-                    android:text="Stations Near Your Location"/>
+                    android:text="@string/title"/>
 
 
             </RelativeLayout>
@@ -70,6 +72,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:src="@drawable/search_black"
+                    android:contentDescription="@string/detected_location"
                     android:layout_height="wrap_content" />
 
                 <TextView
@@ -102,7 +105,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:text="Request A Ride"
+                    android:text="@string/request_a_ride"
                     android:gravity="center"
                     android:id="@+id/tv_request_ride"
                     android:textAllCaps="true"
@@ -120,7 +123,7 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:id="@+id/left_navigation"
             android:layout_height="match_parent">
 

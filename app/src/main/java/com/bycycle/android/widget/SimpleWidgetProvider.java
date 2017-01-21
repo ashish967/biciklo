@@ -44,7 +44,7 @@ public class SimpleWidgetProvider extends AppWidgetProvider {
             int appWidgetId = intent.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,
                     AppWidgetManager.INVALID_APPWIDGET_ID);
             int viewIndex = intent.getIntExtra(EXTRA_ITEM, 0);
-            Toast.makeText(context, "Touched view " + viewIndex, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(context, "Touched view " + viewIndex, Toast.LENGTH_SHORT).show();
             Intent appIntent= new Intent(context, SplashScreen.class);
             appIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
             appIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);

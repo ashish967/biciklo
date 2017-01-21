@@ -26,7 +26,6 @@
         <item name="titleTextColor">@color/black</item>
         <item name="contentInsetStartWithNavigation">0dp</item>
         <item name="android:background">@color/app_color</item>
-        <item name="android:elevation">6dp</item>
     </style>
 
 </resources>

@@ -48,7 +48,7 @@ public class StationsListActivity extends BaseActivity {
     @Override
     public void getExtras() {
 
-        mVehicle= (Vehicle) getIntent().getSerializableExtra(VEHICLE_INFO);
+        mVehicle= (Vehicle) getIntent().getParcelableExtra(VEHICLE_INFO);
     }
 
     @Override

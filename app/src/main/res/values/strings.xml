@@ -2,7 +2,7 @@
 
     <string name="google_maps_key">your_key_goes_here</string>
     <string name="cancel">Cancel</string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="payment">Payment</string>
     <string name="rides">Rides</string>
     <string name="about">About</string>
@@ -21,4 +21,30 @@
     <string name="no_stations">No stations near your location</string>
     <string name="attach_kyc_message">Tap to attach KYC document image</string>
     <string name="attach_kyc_error_message">Please attach kyc document to proceed.</string>
+    <string name="create_station">Create Station</string>
+    <string name="create_vehicle">Create Vehicle</string>
+    <string name="get_vehicle">Get Vehicle List</string>
+    <string name="get_station_list">Get Station List</string>
+    <string name="menu_description">Navigation Menu</string>
+    <string name="station_position">Station position on map</string>
+    <string name="detected_location">Your detected location</string>
+    <string name="submit">Submit</string>
+    <string name="station_name">Station Name</string>
+    <string name="select_location">Select Location</string>
+    <string name="number">NUMBER</string>
+    <string name="request_a_ride">Request A Ride</string>
+    <string name="title">Stations Near Your Location</string>
+    <string name="name">Name</string>
+    <string name="signup">Signup</string>
+    <string name="phone">Phone</string>
+    <string name="no_admin">No  Admin</string>
+    <string name="show_vehicle">Show Vehicles</string>
+    <string name="submitting">Submitting...</string>
+    <string name="end_ride">End Ride</string>
+    <string name="ride_from">Riding from</string>
+    <string name="ride_end_at">Ride ends at</string>
+    <string name="select_station">Select station</string>
+    <string name="no_station_specified">No station specified yet</string>
+    <string name="assigned_to">Assigned to</string>
+    <string name="ready_for_ride">Ready for ride</string>
 </resources>

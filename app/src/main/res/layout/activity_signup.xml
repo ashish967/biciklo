@@ -16,7 +16,7 @@
         android:id="@+id/toolbar"
         android:background="@color/app_color"
         android:minHeight="?attr/actionBarSize"
-        app:title="Signup"
+        app:title="@string/signup"
         style="@style/ToolbarTheme"
         android:layout_height="wrap_content"/>
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:hint="Name"
+            android:hint="@string/name"
             android:inputType="textPersonName"
             android:maxLines="1"
             android:minLines="1"
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:hint="Phone"
+            android:hint="@string/phone"
             android:inputType="textPersonName"
             android:maxLines="1"
             android:minLines="1"
@@ -68,7 +68,7 @@
     <Button
         android:layout_width="match_parent"
         android:background="@color/app_color"
-        android:text="Signup"
+        android:text="@string/signup"
         android:id="@+id/btn_signup"
         android:textColor="@color/colorPrimaryDark"
         android:layout_margin="@dimen/default_margin"

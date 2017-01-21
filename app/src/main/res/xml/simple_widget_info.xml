@@ -1,4 +1,5 @@
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:minWidth="250dp"
     android:minHeight="320dp"
     android:layout_width="match_parent"
@@ -7,5 +8,6 @@
     android:initialLayout="@layout/widget_layout"
     android:resizeMode="none"
     android:widgetCategory="home_screen"
-    android:previewImage="@drawable/bycycle">
+    android:previewImage="@drawable/bycycle"
+    tools:ignore="UnusedAttribute">
 </appwidget-provider>

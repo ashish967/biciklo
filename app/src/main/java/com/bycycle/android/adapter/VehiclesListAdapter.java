@@ -88,17 +88,17 @@ public class VehiclesListAdapter extends RecyclerView.Adapter<VehiclesListAdapte
 //            holder.listItemLayoutBinding.tvAction.setText("Change Station Id");
         }
         else{
-            holder.listItemLayoutBinding.tvStationId.setText("No station specified yet");
+            holder.listItemLayoutBinding.tvStationId.setText(mActivity.getString(R.string.no_station_specified));
 //            holder.listItemLayoutBinding.tvAction.setText("Set Station");
 
         }
 
 
         if(vehicle.getUser()!=null){
-            holder.listItemLayoutBinding.tvUserId.setText("Assigned to "+vehicle.getUser().getName());
+            holder.listItemLayoutBinding.tvUserId.setText(mActivity.getString(R.string.assigned_to)+" "+vehicle.getUser().getName());
         }
         else{
-            holder.listItemLayoutBinding.tvUserId.setText("Ready for ride");
+            holder.listItemLayoutBinding.tvUserId.setText(mActivity.getString(R.string.ready_for_ride));
         }
 
     }

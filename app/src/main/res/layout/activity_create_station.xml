@@ -24,7 +24,7 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Select Location"
+        app:title="@string/select_location"
         style="@style/ToolbarTheme"
         android:id="@+id/toolbar"
         ></android.support.v7.widget.Toolbar>
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_below="@id/toolbar"
             android:layout_margin="@dimen/default_margin"
-            android:hint="Station Name"
+            android:hint="@string/station_name"
             android:background="@null"
             android:gravity="center"
             android:inputType="textCapSentences"
@@ -57,6 +57,7 @@
     <ImageView
         android:layout_width="50dp"
         android:src="@drawable/pin"
+        android:contentDescription="@string/station_position"
         android:layout_centerInParent="true"
         android:layout_height="50dp" />
 
@@ -66,7 +67,7 @@
         android:background="@color/app_color"
         android:textColor="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"
-        android:text="Submit"
+        android:text="@string/submit"
         android:id="@+id/btn_submit"
         android:layout_height="wrap_content" />
 </RelativeLayout>

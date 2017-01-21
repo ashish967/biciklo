@@ -2,6 +2,8 @@ package com.bycycle.android.datatypes;
 
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import com.bycycle.android.utils.JsonUtils;
 
@@ -15,7 +17,7 @@ import java.util.ArrayList;
  * Created by Ashish Kumar Khatri on 21/12/16.
  */
 
-public class Station  implements Serializable{
+public class Station implements Parcelable {
 
     String id;
     String name;
@@ -119,4 +121,39 @@ public class Station  implements Serializable{
 
 
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.id);
+        dest.writeString(this.name);
+        dest.writeDouble(this.lat);
+        dest.writeDouble(this.lng);
+    }
+
+    public Station() {
+    }
+
+    protected Station(Parcel in) {
+        this.id = in.readString();
+        this.name = in.readString();
+        this.lat = in.readDouble();
+        this.lng = in.readDouble();
+    }
+
+    public static final Parcelable.Creator<Station> CREATOR = new Parcelable.Creator<Station>() {
+        @Override
+        public Station createFromParcel(Parcel source) {
+            return new Station(source);
+        }
+
+        @Override
+        public Station[] newArray(int size) {
+            return new Station[size];
+        }
+    };
 }

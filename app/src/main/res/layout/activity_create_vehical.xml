@@ -33,7 +33,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
-                    android:hint="NUMBER"
+                    android:hint="@string/number"
                     android:textAllCaps="true"
                     android:inputType="textCapWords"
                     android:maxLines="1"
@@ -53,7 +53,7 @@
         <Button
             android:layout_width="match_parent"
             android:background="@color/app_color"
-            android:text="Submit"
+            android:text="@string/submit"
             android:layout_gravity="bottom"
             android:id="@+id/btn_signup"
             android:textColor="@color/colorPrimaryDark"

@@ -19,9 +19,9 @@ android {
     signingConfigs {
         config {
             keyAlias 'bycycle'
-            keyPassword ''
+            keyPassword 'abc@123'
             storeFile file('../production_files/playstore.jks')
-            storePassword ''
+            storePassword 'abc@123'
         }
     }
     compileSdkVersion 25
@@ -44,7 +44,7 @@ android {
             signingConfig signingConfigs.config
         }
         debug {
-            applicationIdSuffix 'debug'
+            applicationIdSuffix '.debug'
         }
     }
 }

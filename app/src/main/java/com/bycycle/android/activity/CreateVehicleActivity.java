@@ -80,7 +80,7 @@ public class CreateVehicleActivity extends BaseActivity {
                         }
 
                         Logger.log("Result"+apiresult);
-                        mBinding.btnSignup.setText("Submit");
+                        mBinding.btnSignup.setText(getString(R.string.submit));
 
                     }
 
@@ -90,7 +90,7 @@ public class CreateVehicleActivity extends BaseActivity {
                     public void onError(String result, Object tag) {
                         AppUtils.showToast(CreateVehicleActivity.this,result);
                         mBinding.btnSignup.setEnabled(true);
-                        mBinding.btnSignup.setText("Submit");
+                        mBinding.btnSignup.setText(getString(R.string.submit));
 
                     }
                 },0);
@@ -100,6 +100,6 @@ public class CreateVehicleActivity extends BaseActivity {
         task.execute();
 
         mBinding.btnSignup.setEnabled(false);
-        mBinding.btnSignup.setText("Submitting...");
+        mBinding.btnSignup.setText(getString(R.string.submitting));
     }
 }

@@ -274,7 +274,7 @@ public class HomeActivity extends LocationFetcherActivity implements OnMapReadyC
         switch (view.getId()){
 
             case R.id.iv_menu:
-                mBinding.drawerLayout.openDrawer(Gravity.LEFT);
+                mBinding.drawerLayout.openDrawer(Gravity.START);
                 break;
 
 
@@ -327,7 +327,7 @@ public class HomeActivity extends LocationFetcherActivity implements OnMapReadyC
         if(mStartStation==null){
 
             mBinding.tvJourneyMessage.setVisibility(View.GONE);
-            mBinding.tvRequestRide.setText("Request A Ride");
+            mBinding.tvRequestRide.setText(getString(R.string.request_a_ride));
 
             return;
 
@@ -335,15 +335,15 @@ public class HomeActivity extends LocationFetcherActivity implements OnMapReadyC
 
 
         if(mStartStation!=null&&mCurrentJourney!=null){
-            mBinding.tvRequestRide.setText("End Ride");
+            mBinding.tvRequestRide.setText(getString(R.string.end_ride));
         }
         else{
-            mBinding.tvRequestRide.setText("Request A Ride");
+            mBinding.tvRequestRide.setText(getString(R.string.request_a_ride));
         }
-        String message="Riding from : "+mStartStation.getName();
+        String message=getString(R.string.ride_from)+" : "+mStartStation.getName();
 
         if(mEndStation!=null){
-            message+="\nRide ends at : "+mEndStation.getName();
+            message+="\n"+getString(R.string.ride_end_at)+" : "+mEndStation.getName();
         }
 
         mBinding.tvJourneyMessage.setText(message);

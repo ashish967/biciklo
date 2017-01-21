@@ -1,5 +1,6 @@
 package com.bycycle.android.utils;
 
+import android.annotation.SuppressLint;
 import android.content.ContentUris;
 import android.content.Context;
 import android.database.Cursor;
@@ -24,6 +25,7 @@ public class FileUtils {
      * @param uri     The Uri to query.
      * @author paulburke
      */
+    @SuppressLint("NewApi")
     public static String getPath(final Context context, final Uri uri) {
 
         final boolean isKitKat = Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
@@ -32,7 +34,7 @@ public class FileUtils {
         if (isKitKat && DocumentsContract.isDocumentUri(context, uri)) {
             // ExternalStorageProvider
             if (isExternalStorageDocument(uri)) {
-                final String docId = DocumentsContract.getDocumentId(uri);
+                @SuppressLint("NewApi") final String docId = DocumentsContract.getDocumentId(uri);
                 final String[] split = docId.split(":");
                 final String type = split[0];
 
@@ -45,7 +47,7 @@ public class FileUtils {
             // DownloadsProvider
             else if (isDownloadsDocument(uri)) {
 
-                final String id = DocumentsContract.getDocumentId(uri);
+                @SuppressLint("NewApi") final String id = DocumentsContract.getDocumentId(uri);
                 final Uri contentUri = ContentUris.withAppendedId(
                         Uri.parse("content://downloads/public_downloads"), Long.valueOf(id));
 
@@ -53,7 +55,7 @@ public class FileUtils {
             }
             // MediaProvider
             else if (isMediaDocument(uri)) {
-                final String docId = DocumentsContract.getDocumentId(uri);
+                @SuppressLint("NewApi") final String docId = DocumentsContract.getDocumentId(uri);
                 final String[] split = docId.split(":");
                 final String type = split[0];
 
